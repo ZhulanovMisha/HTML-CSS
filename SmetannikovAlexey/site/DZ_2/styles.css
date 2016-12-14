@@ -9,6 +9,14 @@ ul.menu li {
     margin-right: 15px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+} 
+
 h1 {
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -33,14 +41,33 @@ a {
     font-family: 'Roboto Slab', serif;
 }
 
-#container {
-    padding-bottom: 100px;
-    text-align: center;
+.Category {
+    text-align: center
+}
+.category_text_1 {
+    text-align: left;
+    margin-left: 20px;
+    float: left;
 }
 
+.category_text_1 p {
+    margin-left: 65px;
+}
+
+.category_text_2 {
+    float: left;
+}
+
+.category_text_2 p{
+    margin-left: 146px;
+}
 * {
     margin: 0;
     font-family: 'Roboto Slab', serif;
+}
+
+#iphone {
+text-align: center;
 }
 
 body {
@@ -64,4 +91,9 @@ form {
 
 h2 {
     text-align: center
+}
+
+
+.category_text_4 {
+    
 }
