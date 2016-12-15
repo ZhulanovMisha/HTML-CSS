@@ -16,9 +16,9 @@ body{
 	display: table;
 }
 .header{
-	/*background: #34495e;*/
+	/*background: #f8f8f8;*/
 	margin-bottom: 10px;
-	/*color: white;*/
+	color: white;
 }
 .header .layout-column{
 	min-height: 50px;
@@ -46,9 +46,8 @@ body{
 }
 .footer{
 	min-height: 50px;
-	/*background: #34495e;
-	color:white;*/
-	border-top: 1px solid gray; /*временно для визуализации*/
+	background: #34495e;
+	color:white;
 }
 /*сетка кончилась*/
 .hidden{
@@ -84,23 +83,8 @@ body{
 	max-width: 235px;
 	max-height: 149px;
 }
-h1, h2, h3, h4{
+h1{
 	text-align: center;
-	color: black;
-}
-h2 h3 h4{
-	font-weight: 400;
-	background: #eaeaea;
-}
-h2{
-	font-size: 18px;
-}
-h3{
-	font-size: 16px;
-	
-}
-h4{
-	font-size: 14px;
 }
 .logo img{
 	max-height: 120px;
@@ -121,35 +105,4 @@ a{
 	padding-top: 15px;
 	padding-right: 10px;
 	padding-left: 10px;
-}
-.about_good{
-	color: #707070;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 16px;
-}
-.details{
-	color: #484343;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	text-align: left;
-}
-.specifications ul{
-	padding-left: 10px;
-	font-size: 14px;
-	font-weight: 500;
-	text-align: left;
-	font-style: italic;
-	color: #484343;
-	/*вот это я нашел без проблем, но они же по вертикали не встают :)
-	list-style-image: url(./img/list-style.jpg);
-	*/
-	list-style: none;
-	line-height: 36px;
-}
-.specifications ul li{
-	background: url(./img/list-style.jpg) no-repeat left center;
-	padding-left: 30px;
-
 }
