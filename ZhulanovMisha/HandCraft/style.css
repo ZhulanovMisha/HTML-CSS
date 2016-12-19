@@ -1,61 +1,214 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
-
-/** {
+* {
     margin: 0;
     padding: 0;
-}*/
+}
 
 body {
-    background-color: #f8f8f8;
+    background: #fff;
+}
+
+ul {
+    /*убираем верхнее и нижнее поле, равное 1em*/
+    margin: 0;
+    /*убираем левый отступ, равный 40px*/
+    padding-left: 0;
+    /*убираем маркеры списка*/
+    list-style: none;
 }
 
 a {
+    /*убираем подчеркивание текста ссылок*/
     text-decoration: none;
 }
 
-fieldset {
+
+/****************************************************/
+
+
+/* Размещение логотипа*/
+
+header {
+    font-family: Century Gothic;
+    font-size: 24px;
+    width: 968px;
+    height: 61px;
+    margin: 0 auto;
+    padding-top: 130px;
+    color: #000;
+    background: url(img/logo.jpg) no-repeat;
+    background-size: 968px 150px;
+}
+
+
+/****************************************************/
+
+
+/* Размещение теней меню*/
+
+.ellipse-bottom {
+    width: 968px;
+    height: 72px;
+    margin: 0 auto;
+    background: url(img/menu-ellipse.png) no-repeat;
+    background-position: left bottom;
+}
+
+.ellipse-top-first {
+    position: relative;
+    top: -57px;
+    width: 813px;
+    height: 57px;
+    pointer-events: none;
+    background: url(img/ellipse-top-first.png) no-repeat;
+    background-position: left bottom;
+}
+
+.ellipse-top-second {
+    position: relative;
+    top: -114px;
+    left: 667px;
+    width: 301px;
+    height: 57px;
+    pointer-events: none;
+    background: url(img/ellipse-top-second.png) no-repeat;
+    background-position: left bottom;
+}
+
+
+/****************************************************/
+
+
+/* Размещение меню*/
+
+.menu {
+    width: 968px;
+    height: 57px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #db9816 0%, #ecb03b 100%);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    font-family: Myriad Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 57px;
+    display: block;
+    height: 57px;
+    padding-right: 26px;
+    padding-left: 25px;
+    text-align: center;
+    color: #7b4800;
+    background: url(img/menu-line.png) no-repeat;
+    background-position: left center;
+    background-size: 2px, 36px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .36);
+}
+
+.menu li:first-child a {
+    line-height: 57px;
+    display: block;
+    width: 40px;
+    height: 57px;
+    padding-right: 0;
+    padding-left: 0;
+    background: url(img/menu-button-home.png) no-repeat;
+    background-position: 10px;
+}
+
+.menu li:first-child a:hover {
+    background: url(img/menu-button-home-hover.png) no-repeat;
+    background-position: 10px;
+}
+
+.menu li:hover a {
+    color: #d97e53;
+}
+
+
+/****************************************************/
+
+
+/* Слоган*/
+
+.slogan {
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    width: 968px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    color: #63573a;
+}
+
+.slogan i {
+    font-size: 15px;
+}
+
+
+/****************************************************/
+
+
+/* Каталог*/
+
+.catalog {
+    margin: 0 auto;
+    width: 968px;
+    height: 100px;
+}
+
+
+/*.catalog h3 {
+    margin: 1px 1px 1px 1px;
+}
+*/
+
+
+/****************************************************/
+
+
+/* Контакты*/
+
+.contacts {
+    margin: 0 auto;
+    width: 968px;
+}
+
+.contacts fieldset {
     /*overflow: scroll;*/
     width: 310px;
     min-width: 310px;
     display: table-cell;
 }
 
-.logo {
-    float: left;
-    margin: 7px 20px 7px 0;
-}
 
-.menu ul {
-    padding: 1em 0;
-}
+/****************************************************/
 
-.menu li {
-    display: inline;
-}
 
-.menu a {
-    padding: 1em;
-    background: rgba(177, 152, 145, .3);
-    border-right: 1px solid rgb(0, 0, 0);
-    font-family: 'Lora', serif;
-    color: #695753;
-}
-
-.menu a:hover {
-    background: rgba(164, 164, 164, .3);
-    ;
-}
+/* Подвал*/
 
 .footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 10px;
+    bottom: 1%;
     width: 100%;
+    text-align: center;
 }
 
+
+/****************************************************/
+
+
+/* Подробности об игрушке*/
+
 .item-detail {
-    background: rgb(200, 200, 200);
+    /*background: rgb(200, 200, 200);*/
 }
 
 .item-detail h3 {
