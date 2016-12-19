@@ -33,7 +33,7 @@ body{
 }
 .features{
 	margin-bottom: 10px;
-	margin-left: 320px;
+	/*margin-left: 320px;*/
 }
 .features .layout-column{
 	float: left;;
@@ -76,6 +76,7 @@ body{
 .feature{
 	padding: 10px;
 	text-align: center;
+	height: 224px;
 }
 .footer-logo{
 	padding: 10px;
@@ -169,4 +170,19 @@ a{
 .changelog a{
 	color:red;
 	font-weight: 600;
+}
+.sub-menu{
+	display:none;
+}
+.tourism:hover .sub-menu{
+	display:block;
+}
+.clothes:hover .sub-menu{
+	display:block;
+}
+.equipment:hover .sub-menu{
+	display:block;
+}
+.text li{
+	text-align: left;
 }
