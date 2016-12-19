@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Интернет-Магазин Programm Seller</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/button.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/calculator.js"></script>
+  <style type="text/css">
+  #calculator * {font-size: 16px; font-family: none; align-content: center; margin: auto; position: relative;}
+  #calculator table {border: solid 3px silver; border-spacing: 3px; background-color: #EEE; }
+  #calculator table td {border-spacing: 3px;}
+  input.display {width: 166px; text-align: right;}
+  td.buttons {border-top: solid 1px silver;}  
+  input[class= BTN] {width: 40px; height: 30px;}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault(a);
+  });
+    
+  $('#ddmenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul',this).stop(true,true).slideDown(200);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul',this).stop(true,true).slideUp(200);
+    }, this), 100));
+  });
+
+});
+
+</script>
+  <script type="text/javascript">
+    function isClick() {
+      var a = 'Урааа, вы нажали на кнопку! Хотелось подробнее про задание из ДЗ под номерами 7,11';
+      alert(a);
+    }
+   </script>
+       <br>  <!-- шапка -->
+      <header>
+       <img src="img/logo.png">
+       </header>
+        <!-- navigation, навигация -->
+        <br>
+        <nav>
+          <!-- unordered list, неупорядоченный список, маркированный список -->
+          <ul id="ddmenu">
+            <!-- list item, элемент списка -->
+            <li><a href="#">Меню</a>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог(В разработке)</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#">О нас(В разработке)</a></li>
+              <li><a href="calculator.html">Калькулятор</a></li>
+            </ul>
+          </ul>
+        </nav>
+        <div class="wrapper">
+        <div class="content">
+        <h1>Калькулятор</h1>
+          <form name="calc" id="calculator">
+  <table>
+  <tr>
+  <td>
+    <input type="text" name="input" size="16" class="display">
+  </td>
+  </tr>
+  <tr>
+  <td class="buttons">
+    <input class="BTN" type="button" name="one" value="1" OnClick="calc.input.value += '1'">
+    <input class="BTN" type="button" name="two" value="2" OnClick="calc.input.value += '2'">
+    <input class="BTN" type="button" name="three" value="3" OnClick="calc.input.value += '3'">
+    <input class="BTN" type="button" name="add" value="+" OnClick="calc.input.value += '+'">
+    <br>
+    <input class="BTN" type="button" name="four" value="4" OnClick="calc.input.value += '4'">
+    <input class="BTN" type="button" name="five" value="5" OnClick="calc.input.value += '5'">
+    <input class="BTN" type="button" name="six" value="6" OnClick="calc.input.value += '6'">
+    <input class="BTN" type="button" name="sub" value="-" OnClick="calc.input.value += '-'">
+    <br>
+    <input class="BTN" type="button" name="seven" value="7" OnClick="calc.input.value += '7'">
+    <input class="BTN" type="button" name="eight" value="8" OnClick="calc.input.value += '8'">
+    <input class="BTN" type="button" name="nine" value="9" OnClick="calc.input.value += '9'">
+    <input class="BTN" type="button" name="mul" value="x" OnClick="calc.input.value += '*'">
+    <br>
+    <input class="BTN" type="button" name="clear" value="c" OnClick="calc.input.value = ''">
+    <input class="BTN" type="button" name="zero" value="0" OnClick="calc.input.value += '0'">
+    <input class="BTN" type="button" name="doit" value="=" OnClick="calc.input.value =  eval(calc.input.value)">
+    <input class="BTN" type="button" name="div"  value="/" OnClick="calc.input.value += '/'">
+  </td>
+  </tr>
+  </table>
+</form>
+        <div class="footer">
+           <form action="">
+    <p>  <input id="secret" type="button" value="SuperSecretButton" onclick="isClick()"> </p>
+   </form>
+          <nav>
+          <!-- unordered list, неупорядоченный список, маркированный -->
+          <ul>
+            <!-- list item, элемент списка -->
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог(В разработке)</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#">О нас(В разработке)</a></li>
+              <li><a href="calculator.html">Калькулятор</a></li>
+            </ul>
+          </ul>
+        </nav>
+        <p class="copy">&copy Все права Защищены! (Назиманов Малик)</p>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
